@@ -1,0 +1,51 @@
+@theme {
+    --color-gold: #a58e6c;
+    --color-red: #7b003d;
+    --disable-default-colors: true;
+}
+
+@font-face {
+    font-family: "Balava";
+    src: url("fonts/Balava.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Apertura";
+    src: url("fonts/Apertura Rg.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    font-family: "Apertura", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    background-color: white;
+}
+
+.logo {
+    aspect-ratio: 200/151;
+}
+
+.golden {
+    opacity: 0.1;
+    background-color: #a58e6c;
+}
+
+.background {
+    opacity: 0.2;
+    background-image: url('img/barbara_schlosser_auszeit_mit_klangschalen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(2px);
+}
+
+section {
+    background-color: #7b003d;
+}

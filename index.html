@@ -12,11 +12,13 @@
 
 <body class="antialiased min-h-screen">
     <div class="w-full h-[25vh] md:h-[30vh] lg:h-[35vh] relative">
-        <div class="w-full h-full absolute top-0 left-0 background"></div>
-        <div class="w-full h-full absolute top-0 left-0 golden"></div>
-        <div class="h-full p-10 flex flex-col justify-center">
-            <img class="block max-h-full h-auto w-auto mx-auto logo" src="./assets/img/LOGO_Auszeit_mit_Klang_4c_WEB.svg" alt="Logo">
-        </div>
+        <div class="w-full h-full absolute top-0 left-0 background pointer-events-none"></div>
+        <div class="w-full h-full absolute top-0 left-0 golden pointer-events-none"></div>
+        <a href="index.html" alt="Home Page">
+            <div class="h-full p-10 flex flex-col justify-center">
+                <img class="block max-h-full h-auto w-auto mx-auto logo" src="./assets/img/LOGO_Auszeit_mit_Klang_4c_WEB.svg" alt="Logo">
+            </div>
+        </a>
     </div>
     <main class="w-full text-white">
         <section class="hero relative">
@@ -93,13 +95,13 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="max-w-2xl mx-auto text-center p-6 text-sm">
-                <a href="#">Impressum</a>
-                <span>•</span>
-                <a href="#">Datenschutz</a>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="max-w-2xl mx-auto text-center p-6 text-sm">
+            <a href="impressum.html">Impressum</a>
+            <span>•</span>
+            <a href="#">Datenschutz</a>
+        </div>
+    </footer>
 </body>
 </html>

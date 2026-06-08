@@ -1,15 +1,8 @@
 @theme {
   --color-gold: #a58e6c;
   --color-red: #7b003d;
+  --color-beige: #faf8f4;
   --disable-default-colors: true;
-}
-
-@font-face {
-  font-family: "Balava";
-  src: url("fonts/Balava.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -25,24 +18,31 @@ body {
   font-family: "Apertura", system-ui;
   font-weight: 500;
   font-style: normal;
+  color: #a58e6c;
 }
 
-.logo {
-  aspect-ratio: 200/151;
+.gradient {
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 10%,
+      #faf8f4 80%,
+      #faf8f4 100%);
 }
 
-.golden {
-  opacity: 0.1;
-  background-color: #a58e6c;
+.gradient2 {
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 20%,
+      #faf8f4 40%,
+      #faf8f4 100%);
 }
 
 .background {
-  opacity: 0.2;
+  opacity: 0.1;
   background-image: url("img/barbara_schlosser_auszeit_mit_klangschalen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(2px);
+  background-position: center -100px;
 }
 
 .hero {
@@ -50,13 +50,20 @@ body {
   color: #a58e6c;
 }
 
-.details {
-  background-color: #f8f3ea;
-  color: #a58e6c;
-}
-
 .primary {
   color: #7b003d;
+}
+
+.link {
+  transition: color 200ms;
+}
+
+.link:hover {
+  color: #7b003d;
+}
+
+.link-bright:hover {
+  color: white;
 }
 
 footer {

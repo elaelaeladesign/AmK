@@ -11,22 +11,34 @@
 </head>
 
 <body class="antialiased min-h-screen">
-    <div class="w-full h-[25vh] md:h-[30vh] lg:h-[35vh] relative">
-        <div class="w-full h-full absolute top-0 left-0 background pointer-events-none"></div>
-        <div class="w-full h-full absolute top-0 left-0 golden pointer-events-none"></div>
-        <a href="index.html" alt="Home Page">
-            <div class="h-full p-10 flex flex-col justify-center">
-                <img class="block max-h-full h-auto w-auto mx-auto logo"
-                    src="./assets/img/LOGO_Auszeit_mit_Klang_4c_WEB.svg" alt="Logo">
+    <main class="w-full">
+        <section class="w-full relative">
+            <!-- Main Logo -->
+            <a href="index.html" alt="Home Page" class="block relative z-30">
+                <div class="p-10 flex flex-col justify-center">
+                    <img class="max-w-[350px] w-full h-auto min-w-[0px] mx-auto" src="./assets/img/LOGO_Auszeit_mit_Klang_4c_WEB.png" alt="Logo">
+                </div>
+            </a>
+            <!-- Background image large -->
+            <div class="w-full h-full absolute top-0 left-0 pointer-events-none background z-10"></div>
+            <!-- Gradient -->
+            <div class="w-full h-1/2 absolute bottom-0 left-0 pointer-events-none gradient2 z-20"></div>
+        </section>
+        <section class="w-full relative hero">
+            <!-- Wave -->
+            <div class="absolute mt-px left-0 w-full -translate-y-full z-40">
+                <svg class="w-full h-full" height="55" preserveAspectRatio="none" viewBox="0 0 1000 55">
+                    <path d="
+                        M0,35
+                        C150,48 300,55 500,30
+                        C700,5 850,2 1000,20
+                        L1000,55
+                        L0,55
+                        Z
+                    " fill="#7b003d" />
+                </svg>
             </div>
-        </a>
-    </div>
-    <main class="w-full text-white">
-        <section class="hero relative">
-            <svg class="absolute top-1 left-0 w-full -translate-y-full" height="20" preserveAspectRatio="none"
-                viewBox="0 0 1000 20">
-                <path d="M0,10 C250,-5 750,25 1000,10 L1000,20 L0,20 Z" fill="#7b003d" />
-            </svg>
+            <!-- Content -->
             <div class="flex flex-col grow shrink py-14 px-8 max-w-4xl mx-auto">
                 <h2 class="text-3xl">
                     Impressum
@@ -43,10 +55,10 @@
                     <strong>Konzept, Gestaltung & Umsetzung</strong>
                 </p>
                 <p>
-                    <a href="https://www.astridfallosch.at">www.astridfallosch.at</a>
+                    <a class="link link-bright" href="https://www.astridfallosch.at">www.astridfallosch.at</a>
                 </p>
                 <p>
-                    <a href="https://www.eladesign.at">www.eladesign.at</a>
+                    <a class="link link-bright" href="https://www.eladesign.at">www.eladesign.at</a>
                 </p>
                 <br />
                 <p>
@@ -55,17 +67,16 @@
                 <p>Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
                 Aktualität der Inhalte wird keine Haftung übernommen.</p>
             </div>
-            <svg class="absolute bottom-1 left-0 w-full translate-y-full" height="20" preserveAspectRatio="none"
-                viewBox="0 0 1000 20">
-                <path d="M0,10 C250,25 750,-5 1000,10 L1000,0 L0,0 Z" fill="#7b003d" />
-            </svg>
         </section>
     </main>
     <footer>
         <div class="max-w-2xl mx-auto text-center p-6 text-sm">
-            <a href="impressum.html">Impressum</a>
+            <p class="mb-2">Hier entsteht in Kürze meine Website.</p>
+            <a class="link" href="index.html">Startseite</a>
             <span>•</span>
-            <a href="datenschutz.html">Datenschutz</a>
+            <a class="link" href="impressum.html">Impressum</a>
+            <span>•</span>
+            <a class="link" href="datenschutz.html">Datenschutz</a>
         </div>
     </footer>
 </body>
